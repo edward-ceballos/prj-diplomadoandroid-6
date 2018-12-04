@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/etPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:labelFor="@id/tvPeso"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/etAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/etPeso"
+        android:layout_alignLeft="@+id/etPeso"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:labelFor="@id/tvAltura"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etAltura"
+        android:layout_alignRight="@id/etPeso"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="@string/calcular" />
+
+    <TextView
+        android:id="@+id/tvPeso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etAltura"
+        android:layout_marginTop="22dp"
+        android:layout_marginBottom="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:labelFor="@id/etPeso"
+        android:text="@string/altura" />
+
+    <TextView
+        android:id="@+id/tvAltura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etPeso"
+        android:layout_marginBottom="13dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:labelFor="@id/etAltura"
+        android:text="@string/peso" />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAltura"
+        android:layout_alignStart="@+id/tvAltura"
+        android:layout_alignLeft="@+id/tvAltura"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="173dp"
+        android:text="@string/resultado" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/imagen"
+        app:srcCompat="@drawable/pregunta" />
+</RelativeLayout>

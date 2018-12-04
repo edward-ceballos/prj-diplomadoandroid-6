@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tu Peso Ideal</string>
+    <string name="resultado">Resultado</string>
+    <string name="calcular">Calcular</string>
+    <string name="peso">Peso (kg)</string>
+    <string name="altura">Altura (m)</string>
+    <string name="imagen">Imagen</string>
+</resources>
