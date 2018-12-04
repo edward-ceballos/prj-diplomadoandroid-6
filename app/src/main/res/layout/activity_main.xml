@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     android:padding="20dp">
 
     <EditText
         android:id="@+id/etPeso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imagen"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_marginTop="10dp"
         android:autofillHints=""
         android:ems="10"
+        android:hint="@string/etValue"
         android:inputType="numberDecimal"
-        android:labelFor="@id/tvPeso"
-        tools:targetApi="o" />
+        tools:targetApi="o"
+        android:layout_alignEnd="@+id/imagen" />
 
     <EditText
         android:id="@+id/etAltura"
@@ -31,7 +34,7 @@
         android:autofillHints=""
         android:ems="10"
         android:inputType="numberDecimal"
-        android:labelFor="@id/tvAltura"
+        android:hint="@string/etValue"
         tools:targetApi="o" />
 
     <Button

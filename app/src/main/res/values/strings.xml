@@ -5,4 +5,5 @@
     <string name="peso">Peso (kg)</string>
     <string name="altura">Altura (m)</string>
     <string name="imagen">Imagen</string>
+    <string name="etValue">0.0</string>
 </resources>
